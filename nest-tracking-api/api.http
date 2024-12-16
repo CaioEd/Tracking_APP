@@ -1,0 +1,28 @@
+GET http://localhost:3000/places?text=itupeva
+
+###
+GET http://localhost:3000/places?text=alamedapucurui
+
+###
+
+@originId = ChIJyaMhZtUwz5QRwFF5Gthe_tc
+@destinationId = ChIJ3yKYBP8Bz5QRabepeuizOjA
+
+###
+GET http://localhost:3000/directions?originId={{ originId }}&destinationId={{ destinationId }}
+
+###
+POST http://localhost:3000/routes
+Content-Type: application/json
+
+{
+    "name": "rota 2",
+    "source_id": "{{ originId }}",
+    "destination_id": "{{ destinationId }}"
+}
+
+###
+GET http://localhost:3000/routes
+
+###
+GET http://localhost:3000/routes/6759ad0ef94cdd40e0dd1070
