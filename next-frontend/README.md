@@ -1,4 +1,4 @@
-# Imersão Fullcycle 20 - Sistema de rastreamento de veículos
+# Sistema de rastreamento de veículos
 
 ## Descrição
 
